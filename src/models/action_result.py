@@ -14,7 +14,7 @@ class ActionResult(BaseModel):
         )
     )
     requires_human: bool = Field(
-        ...,
+        ..., 
         description=(
             "True if this ticket should be escalated to a human agent despite a response being drafted. "
             "Set to True when: resolution_confidence is low, policy explicitly requires human involvement, "
