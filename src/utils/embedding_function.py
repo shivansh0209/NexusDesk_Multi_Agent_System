@@ -18,9 +18,8 @@ def embedding_function(path_to_db: str, path_to_data: str) -> None:
                 if not file_name.is_file():
                     continue
                 collection = client.get_or_create_collection(Path(file_name).stem, embedding_function=ef)
-                file_path = folder_path / file_name
                 
-                with open(file_path, "r") as file:
+                with open(file_name, "r") as file:
                     datas = json.loads(file.read())
                 
                 ids = []

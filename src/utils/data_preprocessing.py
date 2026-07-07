@@ -6,7 +6,7 @@ logger = get_logger(__name__)
 
 SCHEMA_CONFIG = {
     "company_policies": {
-        "content_fields": ["content"]
+        "content_fields": ["content", "tags"]
     },
     "customer_profiles": {
         "content_fields": ["notes"]

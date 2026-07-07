@@ -1,7 +1,7 @@
-from src.agents.level_1.intent_analyzer import analyze_intent
-from src.agents.level_1.customer_context_builder import build_context
-from src.agents.level_1.query_synthesiser import synthesize_query
-from src.agents.level_1.level1_superviser import layer1_supervisor
+from src.agents.level_1.intent_analyzer import IntentAnalyzerAgent
+from GenAI.NexusDesk.src.agents.level_1.context_builder import ContextBuilderAgent
+from GenAI.NexusDesk.src.agents.level_1.query_synthesizer import QuerySynthesizerAgent
+from src.agents.level_1.level1_superviser import Layer1Supervisor
 from pprint import pprint
 
 test_query = {
@@ -13,8 +13,8 @@ test_query = {
     "notes": "Should be resolved at Level 1 via RAG - similar to TKT-002 but for analytics not Gantt"
   }
 
-intent = analyze_intent(test_query["raw_query"])
-context = build_context(test_query["customer_id"])
-package = synthesize_query(intent, context)
-routing = layer1_supervisor(package)
+intent = IntentAnalyzerAgent(test_query["raw_query"])
+context = ContextBuilderAgent(test_query["customer_id"])
+package = QuerySynthesizerAgent(intent, context)
+routing = Layer1Supervisor(package)
 pprint(routing)

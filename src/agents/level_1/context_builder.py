@@ -1,7 +1,7 @@
 import chromadb
 import json
 from src.models.customer_context import CustomerContext
-from src.prompts.customer_context_builder import CONTEXT_BUILDER_PROMPT
+from GenAI.NexusDesk.src.prompts.context_builder import CONTEXT_BUILDER_PROMPT
 from src.utils.logger import get_logger
 from langchain_google_genai import ChatGoogleGenerativeAI
 
@@ -35,7 +35,7 @@ def _fetch_past_tickets(ticket_ids: list[str]) -> list[dict]:
     ]
 
 
-def build_context(customer_id: str) -> CustomerContext:
+def ContextBuilderAgent(customer_id: str) -> CustomerContext:
     """
     Builds a structured customer context profile for downstream agents.
     Args:

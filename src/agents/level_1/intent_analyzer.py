@@ -7,7 +7,7 @@ logger = get_logger(__name__)
 _llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.2).with_structured_output(Intent)
 _chain = INTENT_ANALYZER_PROMPT | _llm
 
-def analyze_intent(customer_query: str) -> Intent:
+def IntentAnalyzerAgent(customer_query: str) -> Intent:
     """
     Analyzes the intent of a customer query using the INTENT_ANALYZER_PROMPT.
     Args:

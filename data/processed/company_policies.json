@@ -1,92 +1,83 @@
 [
   {
     "id": "POL-001",
-    "content": "FlowDesk offers a 30-day money-back guarantee for all new Pro and Enterprise subscriptions. Refunds are not available for Free tier accounts as no charges apply. Duplicate charges are refunded immediately upon verification with no time restriction. Partial refunds are available for annual plans cancelled mid-year, prorated to unused months. Refunds are not issued for accounts suspended due to terms of service violations. Processing time for refunds is 3-5 business days. Refunds can only be issued to the original payment method.",
+    "content": "FlowDesk offers a 30-day money-back guarantee for all new Pro and Enterprise subscriptions. Refunds are not available for Free tier accounts as no charges apply. Duplicate charges are refunded immediately upon verification with no time restriction. Partial refunds are available for annual plans cancelled mid-year, prorated to unused months. Refunds are not issued for accounts suspended due to terms of service violations. Processing time for refunds is 3-5 business days. Refunds can only be issued to the original payment method. | refund, billing, money-back, cancellation",
     "metadata": {
       "title": "Refund Policy",
       "category": "billing",
-      "applicable_tiers": "[\"pro\", \"enterprise\"]",
-      "tags": "[\"refund\", \"billing\", \"money-back\", \"cancellation\"]"
+      "applicable_tiers": "[\"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-002",
-    "content": "Free tier includes: up to 5 projects, up to 3 team members, basic task management, 1GB storage, community support only. Pro tier includes everything in Free plus: unlimited projects, unlimited team members, Gantt charts, time tracking, recurring tasks, advanced analytics, data export, Slack and GitHub integrations, priority email support, 50GB storage, 14-day free trial available for Free users. Enterprise tier includes everything in Pro plus: SSO and SAML, IP whitelisting, dedicated server cluster, SLA guarantee, custom integrations, audit logs, dedicated account manager, unlimited storage, 24/7 phone support.",
+    "content": "Free tier includes: up to 5 projects, up to 3 team members, basic task management, 1GB storage, community support only. Pro tier includes everything in Free plus: unlimited projects, unlimited team members, Gantt charts, time tracking, recurring tasks, advanced analytics, data export, Slack and GitHub integrations, priority email support, 50GB storage, 14-day free trial available for Free users. Enterprise tier includes everything in Pro plus: SSO and SAML, IP whitelisting, dedicated server cluster, SLA guarantee, custom integrations, audit logs, dedicated account manager, unlimited storage, 24/7 phone support. | features, tiers, gantt, storage, support, SSO, integrations",
     "metadata": {
       "title": "Feature Access by Tier",
       "category": "feature_access",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"features\", \"tiers\", \"gantt\", \"storage\", \"support\", \"SSO\", \"integrations\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-003",
-    "content": "FlowDesk maintains automated backups every 6 hours for all paid tier accounts. Free tier accounts have daily backups with a 7-day retention window. Pro tier has 6-hour backups with 30-day retention. Enterprise tier has 1-hour backups with 90-day retention. Data recovery requests must be submitted through the support portal. Recovery is guaranteed within 4 hours for Enterprise customers and 24 hours for Pro customers. Free tier recovery is best-effort with no SLA. Data recovery for Enterprise is a P0 escalation and must involve a human engineer.",
+    "content": "FlowDesk maintains automated backups every 6 hours for all paid tier accounts. Free tier accounts have daily backups with a 7-day retention window. Pro tier has 6-hour backups with 30-day retention. Enterprise tier has 1-hour backups with 90-day retention. Data recovery requests must be submitted through the support portal. Recovery is guaranteed within 4 hours for Enterprise customers and 24 hours for Pro customers. Free tier recovery is best-effort with no SLA. Data recovery for Enterprise is a P0 escalation and must involve a human engineer. | data recovery, backup, data loss, SLA, retention",
     "metadata": {
       "title": "Data Recovery Policy",
       "category": "data_loss",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"data recovery\", \"backup\", \"data loss\", \"SLA\", \"retention\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-004",
-    "content": "In the event of suspected account compromise, support agents must immediately force logout all active sessions. All security incidents involving unauthorized access must be escalated to the security team within 1 hour. Enterprise customers must be offered SSO setup and IP whitelisting following any security incident. Support agents cannot independently verify account ownership; a secondary verification channel must be used. Security incidents must be documented with a full log of events. Customers must be notified of all security incidents affecting their account within 24 hours per compliance requirements.",
+    "content": "In the event of suspected account compromise, support agents must immediately force logout all active sessions. All security incidents involving unauthorized access must be escalated to the security team within 1 hour. Enterprise customers must be offered SSO setup and IP whitelisting following any security incident. Support agents cannot independently verify account ownership; a secondary verification channel must be used. Security incidents must be documented with a full log of events. Customers must be notified of all security incidents affecting their account within 24 hours per compliance requirements. | security, compromise, unauthorized access, SSO, IP whitelisting, escalation",
     "metadata": {
       "title": "Account Security Policy",
       "category": "security",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"security\", \"compromise\", \"unauthorized access\", \"SSO\", \"IP whitelisting\", \"escalation\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-005",
-    "content": "Free tier customers receive community forum support only with no guaranteed response time. Pro tier customers receive email support with a guaranteed first response within 8 business hours. Enterprise customers receive 24/7 phone and email support with a guaranteed first response within 1 hour. Critical issues (P0) for Enterprise customers must be escalated to a human engineer immediately regardless of time zone. All customers can submit tickets through the support portal. Support agents should not make promises outside these SLA commitments without manager approval.",
+    "content": "Free tier customers receive community forum support only with no guaranteed response time. Pro tier customers receive email support with a guaranteed first response within 8 business hours. Enterprise customers receive 24/7 phone and email support with a guaranteed first response within 1 hour. Critical issues (P0) for Enterprise customers must be escalated to a human engineer immediately regardless of time zone. All customers can submit tickets through the support portal. Support agents should not make promises outside these SLA commitments without manager approval. | SLA, response time, support, escalation, P0",
     "metadata": {
       "title": "Support SLA Policy",
       "category": "support",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"SLA\", \"response time\", \"support\", \"escalation\", \"P0\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-006",
-    "content": "Free tier customers are eligible for a one-time 14-day Pro trial using promo code PROTRIAL14. The trial can be offered by support agents when a free tier customer is blocked by a feature restriction. Trials cannot be extended beyond 14 days without manager approval. Customers who have previously used a trial are not eligible for a second trial. Enterprise trials require sales team approval and are not within support agent authority to grant. Discount codes and promotions cannot be combined with each other or with existing discounts.",
+    "content": "Free tier customers are eligible for a one-time 14-day Pro trial using promo code PROTRIAL14. The trial can be offered by support agents when a free tier customer is blocked by a feature restriction. Trials cannot be extended beyond 14 days without manager approval. Customers who have previously used a trial are not eligible for a second trial. Enterprise trials require sales team approval and are not within support agent authority to grant. Discount codes and promotions cannot be combined with each other or with existing discounts. | trial, promotion, upgrade, promo code, free tier",
     "metadata": {
       "title": "Trial and Promotion Policy",
       "category": "billing",
-      "applicable_tiers": "[\"free\"]",
-      "tags": "[\"trial\", \"promotion\", \"upgrade\", \"promo code\", \"free tier\"]"
+      "applicable_tiers": "[\"free\"]"
     }
   },
   {
     "id": "POL-007",
-    "content": "Pro and Enterprise customers can cancel their subscription at any time from Settings > Billing > Cancel Subscription. Cancellation takes effect at the end of the current billing cycle. Data is retained for 30 days post-cancellation before permanent deletion. Customers can reactivate within 30 days without data loss. Account pause is available for Pro customers for up to 3 months, during which the account is frozen but data is retained and no charges apply. Free tier cancellation results in immediate account deletion with a 7-day data recovery window. Enterprise cancellations must be processed by the account manager.",
+    "content": "Pro and Enterprise customers can cancel their subscription at any time from Settings > Billing > Cancel Subscription. Cancellation takes effect at the end of the current billing cycle. Data is retained for 30 days post-cancellation before permanent deletion. Customers can reactivate within 30 days without data loss. Account pause is available for Pro customers for up to 3 months, during which the account is frozen but data is retained and no charges apply. Free tier cancellation results in immediate account deletion with a 7-day data recovery window. Enterprise cancellations must be processed by the account manager. | cancellation, pause, account, data retention, reactivation",
     "metadata": {
       "title": "Account Cancellation and Pause Policy",
       "category": "account",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"cancellation\", \"pause\", \"account\", \"data retention\", \"reactivation\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-008",
-    "content": "FlowDesk officially supports Slack, GitHub, Google Calendar, Jira, and Zapier integrations on Pro and Enterprise tiers. Integration issues caused by FlowDesk platform changes are the responsibility of FlowDesk support. Integration issues caused by third-party platform changes are best-effort support only. OAuth 2.0 is the required authentication standard for all integrations as of the January 2024 update. OAuth 1.0 tokens are deprecated and no longer supported. Customers using deprecated tokens must reconnect their integrations using OAuth 2.0. Custom integrations are available for Enterprise tier only.",
+    "content": "FlowDesk officially supports Slack, GitHub, Google Calendar, Jira, and Zapier integrations on Pro and Enterprise tiers. Integration issues caused by FlowDesk platform changes are the responsibility of FlowDesk support. Integration issues caused by third-party platform changes are best-effort support only. OAuth 2.0 is the required authentication standard for all integrations as of the January 2024 update. OAuth 1.0 tokens are deprecated and no longer supported. Customers using deprecated tokens must reconnect their integrations using OAuth 2.0. Custom integrations are available for Enterprise tier only. | integration, Slack, GitHub, OAuth, Zapier, Jira, Google Calendar",
     "metadata": {
       "title": "Integration Support Policy",
       "category": "integration",
-      "applicable_tiers": "[\"pro\", \"enterprise\"]",
-      "tags": "[\"integration\", \"Slack\", \"GitHub\", \"OAuth\", \"Zapier\", \"Jira\", \"Google Calendar\"]"
+      "applicable_tiers": "[\"pro\", \"enterprise\"]"
     }
   },
   {
     "id": "POL-009",
-    "content": "FlowDesk is GDPR and CCPA compliant. Customer data is stored in encrypted databases with AES-256 encryption. Data access is restricted to authorized personnel only. FlowDesk does not sell or share customer data with third parties. Customers can request a copy of their data or request deletion by contacting support. Data deletion requests are processed within 30 days. Enterprise customers can request a Data Processing Agreement (DPA) for compliance purposes. FlowDesk conducts annual security audits and penetration testing to ensure data privacy.",
+    "content": "FlowDesk is GDPR and CCPA compliant. Customer data is stored in encrypted databases with AES-256 encryption. Data access is restricted to authorized personnel only. FlowDesk does not sell or share customer data with third parties. Customers can request a copy of their data or request deletion by contacting support. Data deletion requests are processed within 30 days. Enterprise customers can request a Data Processing Agreement (DPA) for compliance purposes. FlowDesk conducts annual security audits and penetration testing to ensure data privacy. | data privacy, GDPR, CCPA, encryption, DPA, compliance",
     "metadata": {
       "title": "Data Privacy and Compliance Policy",
       "category": "compliance",
-      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]",
-      "tags": "[\"data privacy\", \"GDPR\", \"CCPA\", \"encryption\", \"DPA\", \"compliance\"]"
+      "applicable_tiers": "[\"free\", \"pro\", \"enterprise\"]"
     }
   }
 ]
