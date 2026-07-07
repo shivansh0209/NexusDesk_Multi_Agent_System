@@ -1,0 +1,146 @@
+[
+  {
+    "id": "CUST-101",
+    "content": "Had a billing dispute in January which was resolved. Generally a satisfied customer.",
+    "metadata": {
+      "name": "Sarah Mitchell",
+      "email": "sarah.mitchell@designco.com",
+      "company": "DesignCo Studio",
+      "subscription_tier": "pro",
+      "subscription_start": "2023-06-15",
+      "billing_cycle": "monthly",
+      "account_status": "active",
+      "region": "US-East",
+      "team_size": 12,
+      "past_ticket_ids": "[\"TKT-001\"]",
+      "past_ticket_categories": "[\"billing\"]",
+      "account_health": "good"
+    }
+  },
+  {
+    "id": "CUST-202",
+    "content": "New user, currently on free trial of Pro after feature inquiry. Potential upgrade candidate.",
+    "metadata": {
+      "name": "Raj Patel",
+      "email": "raj@startupnest.io",
+      "company": "StartupNest",
+      "subscription_tier": "free",
+      "subscription_start": "2024-01-01",
+      "billing_cycle": "none",
+      "account_status": "active",
+      "region": "US-West",
+      "team_size": 3,
+      "past_ticket_ids": "[\"TKT-002\"]",
+      "past_ticket_categories": "[\"feature_access\"]",
+      "account_health": "neutral"
+    }
+  },
+  {
+    "id": "CUST-303",
+    "content": "Had a critical data loss incident. Account flagged for priority support. Account manager should follow up.",
+    "metadata": {
+      "name": "Elena Kovacs",
+      "email": "elena.kovacs@techgiant.com",
+      "company": "TechGiant Corp",
+      "subscription_tier": "enterprise",
+      "subscription_start": "2022-03-01",
+      "billing_cycle": "annual",
+      "account_status": "active",
+      "region": "EU-West",
+      "team_size": 250,
+      "past_ticket_ids": "[\"TKT-003\"]",
+      "past_ticket_categories": "[\"data_loss\"]",
+      "account_health": "at_risk"
+    }
+  },
+  {
+    "id": "CUST-404",
+    "content": "Had Slack integration issue post update. Resolved. Heavy Slack integration user.",
+    "metadata": {
+      "name": "James O'Brien",
+      "email": "james@remoteworks.co",
+      "company": "RemoteWorks",
+      "subscription_tier": "pro",
+      "subscription_start": "2023-09-10",
+      "billing_cycle": "monthly",
+      "account_status": "active",
+      "region": "EU-North",
+      "team_size": 28,
+      "past_ticket_ids": "[\"TKT-004\"]",
+      "past_ticket_categories": "[\"integration\"]",
+      "account_health": "good"
+    }
+  },
+  {
+    "id": "CUST-505",
+    "content": "Had lockout issue due to email spam filtering. Resolved via backup email.",
+    "metadata": {
+      "name": "Priya Sharma",
+      "email": "priya.sharma@consultingpro.in",
+      "company": "ConsultingPro",
+      "subscription_tier": "pro",
+      "subscription_start": "2023-11-20",
+      "billing_cycle": "monthly",
+      "account_status": "active",
+      "region": "APAC",
+      "team_size": 8,
+      "past_ticket_ids": "[\"TKT-005\"]",
+      "past_ticket_categories": "[\"account_access\"]",
+      "account_health": "good"
+    }
+  },
+  {
+    "id": "CUST-NEW-001",
+    "content": "New customer. No prior tickets. First contact with support.",
+    "metadata": {
+      "name": "Marco Rossi",
+      "email": "marco@buildfast.dev",
+      "company": "BuildFast",
+      "subscription_tier": "pro",
+      "subscription_start": "2024-02-25",
+      "billing_cycle": "monthly",
+      "account_status": "active",
+      "region": "EU-South",
+      "team_size": 6,
+      "past_ticket_ids": "[]",
+      "past_ticket_categories": "[]",
+      "account_health": "good"
+    }
+  },
+  {
+    "id": "CUST-NEW-002",
+    "content": "New enterprise customer. No prior tickets. Has dedicated account manager: AM-007.",
+    "metadata": {
+      "name": "Aisha Okonkwo",
+      "email": "aisha@fintech-ng.com",
+      "company": "FintechNG",
+      "subscription_tier": "enterprise",
+      "subscription_start": "2024-01-15",
+      "billing_cycle": "annual",
+      "account_status": "active",
+      "region": "Africa",
+      "team_size": 80,
+      "past_ticket_ids": "[]",
+      "past_ticket_categories": "[]",
+      "account_health": "good"
+    }
+  },
+  {
+    "id": "CUST-NEW-003",
+    "content": "Solo freelancer on free tier. No prior tickets.",
+    "metadata": {
+      "name": "David Chen",
+      "email": "david.chen@freelance.com",
+      "company": "Independent Freelancer",
+      "subscription_tier": "free",
+      "subscription_start": "2024-02-10",
+      "billing_cycle": "none",
+      "account_status": "active",
+      "region": "APAC",
+      "team_size": 1,
+      "past_ticket_ids": "[]",
+      "past_ticket_categories": "[]",
+      "account_health": "neutral"
+    }
+  }
+]

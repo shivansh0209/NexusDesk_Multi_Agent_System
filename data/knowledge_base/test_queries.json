@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Q-001",
+    "customer_id": "CUST-NEW-001",
+    "raw_query": "Hi, I upgraded to Pro last week but I still can't see any analytics dashboard. Where is it?",
+    "expected_category": "feature_access",
+    "expected_resolution_level": 1,
+    "notes": "Should be resolved at Level 1 via RAG - similar to TKT-002 but for analytics not Gantt"
+  },
+  {
+    "id": "Q-002",
+    "customer_id": "CUST-NEW-002",
+    "raw_query": "We need to ensure all logins go through our company's identity provider. How do we set this up? We are on enterprise.",
+    "expected_category": "security",
+    "expected_resolution_level": 1,
+    "notes": "SSO setup for enterprise. Should be resolvable at Level 1 via policy + RAG"
+  },
+  {
+    "id": "Q-003",
+    "customer_id": "CUST-NEW-003",
+    "raw_query": "I accidentally deleted a project I was working on. Is there any way to get it back? I am on the free plan.",
+    "expected_category": "data_loss",
+    "expected_resolution_level": 2,
+    "notes": "Data recovery for free tier. RAG may partially help but escalation likely needed"
+  },
+  {
+    "id": "Q-004",
+    "customer_id": "CUST-NEW-001",
+    "raw_query": "Our whole team is getting logged out randomly every 20 minutes. This is making it impossible to work. We have a product launch tomorrow.",
+    "expected_category": "account_access",
+    "expected_resolution_level": 2,
+    "notes": "Unusual session expiry bug. Unlikely in RAG. Needs Level 2 research agents. High urgency."
+  },
+  {
+    "id": "Q-005",
+    "customer_id": "CUST-NEW-002",
+    "raw_query": "We want to build a custom integration with our internal HR system to automatically create onboarding project templates when a new employee joins. Is this possible?",
+    "expected_category": "integration",
+    "expected_resolution_level": 3,
+    "notes": "Novel custom integration request. Not in RAG. Needs Level 3 agents and likely human escalation."
+  }
+]
