@@ -1,9 +1,9 @@
-from GenAI.NexusDesk.src.models.enriched_query import EnrichedQueryPackage
+from src.models.enriched_query import EnrichedQueryPackage
 from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-CRITICAL_FLAGS = {"data_loss_category", "security_incident", "at_risk_account", "past_unresolved_ticket"}
+CRITICAL_FLAGS = {"data_loss", "security_incident", "at_risk_account", "past_unresolved_ticket"}
 
 def Layer1Supervisor(package: EnrichedQueryPackage) -> dict:
     """

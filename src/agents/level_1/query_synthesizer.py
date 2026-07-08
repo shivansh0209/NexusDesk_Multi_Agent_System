@@ -1,6 +1,6 @@
 from src.models.intent import Intent
 from src.models.customer_context import CustomerContext
-from GenAI.NexusDesk.src.models.enriched_query import EnrichedQueryPackage
+from src.models.enriched_query import EnrichedQueryPackage
 from src.prompts.query_synthesis import QUERY_SYNTHESIS_PROMPT
 from src.utils.logger import get_logger
 from langchain_google_genai import ChatGoogleGenerativeAI

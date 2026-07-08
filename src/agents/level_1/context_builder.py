@@ -1,7 +1,7 @@
 import chromadb
 import json
 from src.models.customer_context import CustomerContext
-from GenAI.NexusDesk.src.prompts.context_builder import CONTEXT_BUILDER_PROMPT
+from src.prompts.context_builder import CONTEXT_BUILDER_PROMPT
 from src.utils.logger import get_logger
 from langchain_google_genai import ChatGoogleGenerativeAI
 
