@@ -29,37 +29,38 @@ That is exactly the gap LangGraph fills. NexusDesk was built to make that argume
 ---
 
 ## Architecture
-Customer Query
-│
-▼
-┌─────────────────────────────────────┐
-│            LAYER 1                  │
-│  Intent Analyzer Agent              │  ← What does the customer want?
-│  Customer Context Builder Agent     │  ← Who is this customer?
-│  Query Synthesizer Agent            │  ← Priority, category, routing flags
-│  Layer 1 Supervisor                 │  ← P0 / critical flags → Layer 3, else **selects which Layer 2 agents to invoke**
-└─────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────┐
-│            LAYER 2                  │
-│  Knowledge Base Agent  (if choosen) │  ← Semantic search over resolved tickets
-│  Policy Agent (if choosen)          │  ← Is this customer entitled to X?
-│  Action & Response Agent            │  ← Draft response + system action
-│  Layer 2 Supervisor                 │  ← Low confidence → Layer 3
-└─────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────┐
-│            LAYER 3                  │
-│  Human Handoff                      │  ← Priority-routed briefing + draft
-└─────────────────────────────────────┘
+
+````mermaid
+flowchart TD
+    Q([Customer Query]) --> L1
+
+    subgraph L1[Layer 1 — Context & Intelligence]
+        A1[Intent Analyzer Agent] --> A2[Context Builder Agent] --> A3[Query Synthesizer Agent] --> S1[Layer 1 Supervisor]
+    end
+
+    S1 -->|P0 or critical flags| L3
+    S1 -->|Selects agents to invoke in L2| L2
+
+    subgraph L2[Layer 2 — Resolution]
+        B1[Knowledge Base Agent] --> B3[Action & Response Agent]
+        B2[Policy & Eligibility Agent] --> B3
+        B3 --> S2[Layer 2 Supervisor]
+    end
+
+    S2 -->|Low confidence or requires human| L3
+    S2 -->|Resolved| R([Customer Response ✓])
+
+    subgraph L3[Layer 3 — Human Handoff]
+        H[Priority-Routed Briefing + Draft]
+    end
+````
 
 ---
 
 ## Project Highlights
 
 ### Production-Grade Code Structure
+```text
 NexusDesk/
 ├── main.py                        # Orchestration pipeline
 ├── src/
@@ -75,6 +76,7 @@ NexusDesk/
 └── tests/                         # Full unit test suite with mocked LLM responses
 │
 └── logs/      
+```
 
 Every layer is isolated. Every agent has its own model, prompt, and function. Module-level LLM clients use the `_` prefix convention and are instantiated once — not on every call.
 
