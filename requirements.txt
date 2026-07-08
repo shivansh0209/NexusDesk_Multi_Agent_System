@@ -1,0 +1,5 @@
+langchain-google-genai
+langchain-core
+chromadb
+sentence-transformers
+pydantic
