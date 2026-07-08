@@ -1,12 +1,11 @@
 import os
 os.environ["GOOGLE_API_KEY"] = "fake-key"
 
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from src.agents.level_1.intent_analyzer import IntentAnalyzerAgent
 from src.models.intent import Intent
 
 def test_intent_analyzer():
-    # Build a fake Intent response
     fake_intent = Intent(
         emotional_tone="frustrated",
         urgency="high",
@@ -15,7 +14,6 @@ def test_intent_analyzer():
         already_tried="Checked invoices"
     )
 
-    # Patch the _chain inside intent_analyzer — no API call happens
     with patch("src.agents.level_1.intent_analyzer._chain") as mock_chain:
         mock_chain.invoke.return_value = fake_intent
 
@@ -23,4 +21,4 @@ def test_intent_analyzer():
 
         assert result.emotional_tone == "frustrated"
         assert result.urgency == "high"
-        mock_chain.invoke.assert_called_once()  # confirm it was actually called
+        mock_chain.invoke.assert_called_once()
