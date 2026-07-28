@@ -61,21 +61,32 @@ flowchart TD
 
 ### Production-Grade Code Structure
 ```text
-NexusDesk/
-├── main.py                        # Orchestration pipeline
+NexusDesk_Multi_Agent_System/
+├── main.py
+├── requirements.txt
+├── README.md
+├── RETROSPECTIVE.md
 ├── src/
 │   ├── agents/
-│   │   ├── level_1/               # Intent, Context, Synthesis, L1 Supervisor
-│   │   └── level_2/               # KB, Policy, Action, L2 Supervisor
-│   ├── models/                    # Pydantic models for every agent I/O
-│   ├── prompts/                   # LangChain prompt templates, one per agent
-│   └── utils/                     # Data preprocessing, embeddings, logger
-├── data/
-│   ├── knowledge_base/            # Simulated company data (policies, profiles, tickets)
-│   └── processed/                 # Preprocessed and normalized for ChromaDB
-└── tests/                         # Full unit test suite with mocked LLM responses
-│
-└── logs/      
+│   │   ├── level_1/
+│   │   │   ├── intent_analyzer.py       # Agent 1
+│   │   │   ├── context_builder.py       # Agent 2
+│   │   │   ├── query_synthesizer.py     # Agent 3
+│   │   │   └── level1_superviser.py     # L1 Supervisor
+│   │   └── level_2/
+│   │       ├── kb_agent.py              # Knowledge Base Agent
+│   │       ├── policy_agent.py          # Policy & Eligibility Agent
+│   │       ├── action_agent.py          # Action & Response Agent
+│   │       └── level2_superviser.py     # L2 Supervisor
+│   ├── models/
+│   │   ├── enriched_query.py            # EnrichedQueryPackage model
+│   │   ├── kb_result.py                 # KBResult model
+│   │   └── policy_result.py             # PolicyResult model
+│   └── utils/
+│       └── logger.py                    # Logging utility
+├── data/                      # Simulated customer/KB data
+├── logs/                      # Runtime logs
+└── tests/                     # Test suite (pytest)   
 ```
 
 Every layer is isolated. Every agent has its own model, prompt, and function. Module-level LLM clients use the `_` prefix convention and are instantiated once — not on every call.
